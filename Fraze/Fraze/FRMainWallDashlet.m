@@ -2,13 +2,29 @@
 //  FRMainWallDashlet.m
 //  Fraze
 //
-//  Created by Si Te Feng on 12/21/14.
-//  Copyright (c) 2014 Si Te Feng. All rights reserved.
+//  Created by Si Te Feng on 1/7/15.
+//  Copyright (c) 2015 Si Te Feng. All rights reserved.
 //
 
 #import "FRMainWallDashlet.h"
 
 @implementation FRMainWallDashlet
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    
+    return self;
+}
+
+
+- (void)setup
+{
+    self.avatarImageView.layer.cornerRadius = self.avatarImageView.frame.size.width/2.0f;
+    self.avatarImageView.layer.masksToBounds = YES;
+    self.avatarImageView.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
+    
+}
 
 
 

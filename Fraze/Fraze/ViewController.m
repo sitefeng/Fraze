@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "FRGroupWallDashlet.h"
 #import "FRMainWallDashlet.h"
 
 @interface ViewController ()
@@ -18,15 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc] init];
-    
-    UICollectionView* collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, 320, 100) collectionViewLayout:layout];
-    collectionView.backgroundColor = [UIColor blueColor];
-    [collectionView registerClass:[FRGroupWallDashlet class] forCellWithReuseIdentifier:@"FRGroupWallDashlet"];
-    [self.view addSubview:collectionView];
-    
+    [self.mainCollectionView setDelegate:self];
+    [self.mainCollectionView setDataSource:self];
     
 }
 
@@ -45,8 +38,12 @@
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FRGroupWallDashlet" forIndexPath:indexPath];
+    FRMainWallDashlet* cell = (FRMainWallDashlet*)[collectionView dequeueReusableCellWithReuseIdentifier:@"FRGroupWallDashlet" forIndexPath:indexPath];
+    [cell setup];
+    cell.title.text = @"My Boys";
+    cell.subtitle.text = @"10 hours ago...";
     
+    cell.mainImageView.image = [UIImage imageNamed:@"img1"];
     
     return cell;
     

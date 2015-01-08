@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */; };
+		AA3111091A5E704C003384DC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111081A5E704C003384DC /* img1.png */; };
 		AAA887241A46C40100FEE428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887231A46C40100FEE428 /* main.m */; };
 		AAA887271A46C40100FEE428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887261A46C40100FEE428 /* AppDelegate.m */; };
 		AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */; };
@@ -15,8 +17,6 @@
 		AAA887321A46C40100FEE428 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA887311A46C40100FEE428 /* Images.xcassets */; };
 		AAA887351A46C40100FEE428 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA887331A46C40100FEE428 /* LaunchScreen.xib */; };
 		AAA887411A46C40100FEE428 /* FrazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887401A46C40100FEE428 /* FrazeTests.m */; };
-		AAA8874F1A46CA2200FEE428 /* FRMainWallDashlet.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA8874E1A46CA2200FEE428 /* FRMainWallDashlet.m */; };
-		AAA887521A46CAC900FEE428 /* FRGroupWallDashlet.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887511A46CAC900FEE428 /* FRGroupWallDashlet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainWallDashlet.h; sourceTree = "<group>"; };
+		AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainWallDashlet.m; sourceTree = "<group>"; };
+		AA3111081A5E704C003384DC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 		AAA8871E1A46C40100FEE428 /* Fraze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fraze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA887221A46C40100FEE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA887231A46C40100FEE428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,10 +47,6 @@
 		AAA8873A1A46C40100FEE428 /* FrazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA8873F1A46C40100FEE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA887401A46C40100FEE428 /* FrazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrazeTests.m; sourceTree = "<group>"; };
-		AAA8874D1A46CA2200FEE428 /* FRMainWallDashlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainWallDashlet.h; sourceTree = "<group>"; };
-		AAA8874E1A46CA2200FEE428 /* FRMainWallDashlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainWallDashlet.m; sourceTree = "<group>"; };
-		AAA887501A46CAC900FEE428 /* FRGroupWallDashlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRGroupWallDashlet.h; sourceTree = "<group>"; };
-		AAA887511A46CAC900FEE428 /* FRGroupWallDashlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRGroupWallDashlet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA31110A1A5E7051003384DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AA3111081A5E704C003384DC /* img1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		AAA887151A46C40100FEE428 = {
 			isa = PBXGroup;
 			children = (
@@ -93,14 +100,13 @@
 				AAA887261A46C40100FEE428 /* AppDelegate.m */,
 				AAA8872B1A46C40100FEE428 /* ViewController.h */,
 				AAA8872C1A46C40100FEE428 /* ViewController.m */,
-				AAA887501A46CAC900FEE428 /* FRGroupWallDashlet.h */,
-				AAA887511A46CAC900FEE428 /* FRGroupWallDashlet.m */,
-				AAA8874D1A46CA2200FEE428 /* FRMainWallDashlet.h */,
-				AAA8874E1A46CA2200FEE428 /* FRMainWallDashlet.m */,
+				AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */,
+				AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */,
 				AAA8872E1A46C40100FEE428 /* Main.storyboard */,
 				AAA887311A46C40100FEE428 /* Images.xcassets */,
 				AAA887331A46C40100FEE428 /* LaunchScreen.xib */,
 				AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */,
+				AA31110A1A5E7051003384DC /* Images */,
 				AAA887211A46C40100FEE428 /* Supporting Files */,
 			);
 			path = Fraze;
@@ -213,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA887301A46C40100FEE428 /* Main.storyboard in Resources */,
+				AA3111091A5E704C003384DC /* img1.png in Resources */,
 				AAA887351A46C40100FEE428 /* LaunchScreen.xib in Resources */,
 				AAA887321A46C40100FEE428 /* Images.xcassets in Resources */,
 			);
@@ -232,9 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA8874F1A46CA2200FEE428 /* FRMainWallDashlet.m in Sources */,
-				AAA887521A46CAC900FEE428 /* FRGroupWallDashlet.m in Sources */,
 				AAA887271A46C40100FEE428 /* AppDelegate.m in Sources */,
+				AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */,
 				AAA887241A46C40100FEE428 /* main.m in Sources */,
 				AAA8872D1A46C40100FEE428 /* ViewController.m in Sources */,
 				AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */,
@@ -428,6 +434,7 @@
 				AAA887461A46C40100FEE428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAA887471A46C40100FEE428 /* Build configuration list for PBXNativeTarget "FrazeTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				AAA887491A46C40100FEE428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

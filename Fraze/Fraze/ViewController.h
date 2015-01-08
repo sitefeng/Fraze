@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 
+@property (weak, nonatomic) IBOutlet UICollectionView *mainCollectionView;
+
+
+
+
 @end
 
