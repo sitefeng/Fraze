@@ -20,10 +20,15 @@
 
 - (void)setup
 {
+    self.clipsToBounds = YES;
+    self.layer.cornerRadius = 10;
+    
     self.avatarImageView.layer.cornerRadius = self.avatarImageView.frame.size.width/2.0f;
     self.avatarImageView.layer.masksToBounds = YES;
     self.avatarImageView.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
     
+    [self.upVoteButton setImage:[UIImage imageNamed:@"navyThumb"] forState:UIControlStateNormal];
+    [self.upVoteButton setImage:[UIImage imageNamed:@"blueThumb"] forState:UIControlStateSelected];
 }
 
 

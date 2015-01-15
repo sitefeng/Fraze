@@ -8,11 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */; };
-		AA3111091A5E704C003384DC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111081A5E704C003384DC /* img1.png */; };
+		AA3111091A5E704C003384DC /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111081A5E704C003384DC /* img2.png */; };
+		AA31110C1A64E62E003384DC /* profile1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31110B1A64E62E003384DC /* profile1.png */; };
+		AA3111171A64F768003384DC /* JPGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111101A64F768003384DC /* JPGlobal.m */; };
+		AA3111181A64F768003384DC /* NSObject+JPConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111121A64F768003384DC /* NSObject+JPConvenience.m */; };
+		AA3111191A64F768003384DC /* JPStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111141A64F768003384DC /* JPStyle.m */; };
+		AA31111A1A64F768003384DC /* JPFont.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111161A64F768003384DC /* JPFont.m */; };
+		AA31111E1A64FBA8003384DC /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = AA31111D1A64FBA8003384DC /* UIColor+RGBValues.m */; };
+		AA3111201A677CF5003384DC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31111F1A677CF5003384DC /* img1.png */; };
+		AA3111261A678295003384DC /* blackThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111231A678295003384DC /* blackThumb.png */; };
+		AA3111271A678295003384DC /* blueThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111241A678295003384DC /* blueThumb.png */; };
+		AA3111281A678295003384DC /* navyThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111251A678295003384DC /* navyThumb.png */; };
+		AA31112A1A6782D4003384DC /* profile0.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111291A6782D4003384DC /* profile0.png */; };
+		AA31112C1A6788D3003384DC /* plusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31112B1A6788D3003384DC /* plusButton.png */; };
+		AA31112E1A678AB2003384DC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31112D1A678AB2003384DC /* logo.png */; };
+		AA3111311A678C8D003384DC /* whiteLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111301A678C8D003384DC /* whiteLogo.png */; };
 		AAA887241A46C40100FEE428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887231A46C40100FEE428 /* main.m */; };
 		AAA887271A46C40100FEE428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887261A46C40100FEE428 /* AppDelegate.m */; };
 		AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */; };
-		AAA8872D1A46C40100FEE428 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA8872C1A46C40100FEE428 /* ViewController.m */; };
+		AAA8872D1A46C40100FEE428 /* FRMainWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA8872C1A46C40100FEE428 /* FRMainWallViewController.m */; };
 		AAA887301A46C40100FEE428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA8872E1A46C40100FEE428 /* Main.storyboard */; };
 		AAA887321A46C40100FEE428 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA887311A46C40100FEE428 /* Images.xcassets */; };
 		AAA887351A46C40100FEE428 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA887331A46C40100FEE428 /* LaunchScreen.xib */; };
@@ -32,15 +46,37 @@
 /* Begin PBXFileReference section */
 		AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainWallDashlet.h; sourceTree = "<group>"; };
 		AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainWallDashlet.m; sourceTree = "<group>"; };
-		AA3111081A5E704C003384DC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		AA3111081A5E704C003384DC /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		AA31110B1A64E62E003384DC /* profile1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile1.png; sourceTree = "<group>"; };
+		AA31110D1A64F74A003384DC /* ApplicationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationConstants.h; sourceTree = "<group>"; };
+		AA31110E1A64F768003384DC /* UserInterfaceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInterfaceConstants.h; sourceTree = "<group>"; };
+		AA31110F1A64F768003384DC /* JPGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPGlobal.h; sourceTree = "<group>"; };
+		AA3111101A64F768003384DC /* JPGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPGlobal.m; sourceTree = "<group>"; };
+		AA3111111A64F768003384DC /* NSObject+JPConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JPConvenience.h"; sourceTree = "<group>"; };
+		AA3111121A64F768003384DC /* NSObject+JPConvenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JPConvenience.m"; sourceTree = "<group>"; };
+		AA3111131A64F768003384DC /* JPStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPStyle.h; sourceTree = "<group>"; };
+		AA3111141A64F768003384DC /* JPStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPStyle.m; sourceTree = "<group>"; };
+		AA3111151A64F768003384DC /* JPFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFont.h; sourceTree = "<group>"; };
+		AA3111161A64F768003384DC /* JPFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFont.m; sourceTree = "<group>"; };
+		AA31111C1A64FBA8003384DC /* UIColor+RGBValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBValues.h"; sourceTree = "<group>"; };
+		AA31111D1A64FBA8003384DC /* UIColor+RGBValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBValues.m"; sourceTree = "<group>"; };
+		AA31111F1A677CF5003384DC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		AA3111231A678295003384DC /* blackThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackThumb.png; sourceTree = "<group>"; };
+		AA3111241A678295003384DC /* blueThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueThumb.png; sourceTree = "<group>"; };
+		AA3111251A678295003384DC /* navyThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navyThumb.png; sourceTree = "<group>"; };
+		AA3111291A6782D4003384DC /* profile0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile0.png; sourceTree = "<group>"; };
+		AA31112B1A6788D3003384DC /* plusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusButton.png; sourceTree = "<group>"; };
+		AA31112D1A678AB2003384DC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		AA3111301A678C8D003384DC /* whiteLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteLogo.png; sourceTree = "<group>"; };
+		AA3111321A679315003384DC /* FRPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FRPrefix.pch; path = /Users/Main/Documents/Fraze/Fraze/Fraze/FRPrefix.pch; sourceTree = "<absolute>"; };
 		AAA8871E1A46C40100FEE428 /* Fraze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fraze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA887221A46C40100FEE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA887231A46C40100FEE428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAA887251A46C40100FEE428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAA887261A46C40100FEE428 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AAA887291A46C40100FEE428 /* Fraze.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fraze.xcdatamodel; sourceTree = "<group>"; };
-		AAA8872B1A46C40100FEE428 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AAA8872C1A46C40100FEE428 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAA8872B1A46C40100FEE428 /* FRMainWallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRMainWallViewController.h; sourceTree = "<group>"; };
+		AAA8872C1A46C40100FEE428 /* FRMainWallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRMainWallViewController.m; sourceTree = "<group>"; };
 		AAA8872F1A46C40100FEE428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAA887311A46C40100FEE428 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AAA887341A46C40100FEE428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -70,9 +106,44 @@
 		AA31110A1A5E7051003384DC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				AA3111081A5E704C003384DC /* img1.png */,
+				AA3111301A678C8D003384DC /* whiteLogo.png */,
+				AA31112D1A678AB2003384DC /* logo.png */,
+				AA31112F1A678ABB003384DC /* Main Wall */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		AA31111B1A64F78E003384DC /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				AA31110E1A64F768003384DC /* UserInterfaceConstants.h */,
+				AA31110F1A64F768003384DC /* JPGlobal.h */,
+				AA3111101A64F768003384DC /* JPGlobal.m */,
+				AA31111C1A64FBA8003384DC /* UIColor+RGBValues.h */,
+				AA31111D1A64FBA8003384DC /* UIColor+RGBValues.m */,
+				AA3111111A64F768003384DC /* NSObject+JPConvenience.h */,
+				AA3111121A64F768003384DC /* NSObject+JPConvenience.m */,
+				AA3111131A64F768003384DC /* JPStyle.h */,
+				AA3111141A64F768003384DC /* JPStyle.m */,
+				AA3111151A64F768003384DC /* JPFont.h */,
+				AA3111161A64F768003384DC /* JPFont.m */,
+			);
+			name = Convenience;
+			sourceTree = "<group>";
+		};
+		AA31112F1A678ABB003384DC /* Main Wall */ = {
+			isa = PBXGroup;
+			children = (
+				AA31112B1A6788D3003384DC /* plusButton.png */,
+				AA31111F1A677CF5003384DC /* img1.png */,
+				AA3111081A5E704C003384DC /* img2.png */,
+				AA3111231A678295003384DC /* blackThumb.png */,
+				AA3111241A678295003384DC /* blueThumb.png */,
+				AA3111251A678295003384DC /* navyThumb.png */,
+				AA31110B1A64E62E003384DC /* profile1.png */,
+				AA3111291A6782D4003384DC /* profile0.png */,
+			);
+			name = "Main Wall";
 			sourceTree = "<group>";
 		};
 		AAA887151A46C40100FEE428 = {
@@ -98,8 +169,10 @@
 			children = (
 				AAA887251A46C40100FEE428 /* AppDelegate.h */,
 				AAA887261A46C40100FEE428 /* AppDelegate.m */,
-				AAA8872B1A46C40100FEE428 /* ViewController.h */,
-				AAA8872C1A46C40100FEE428 /* ViewController.m */,
+				AA31110D1A64F74A003384DC /* ApplicationConstants.h */,
+				AA31111B1A64F78E003384DC /* Convenience */,
+				AAA8872B1A46C40100FEE428 /* FRMainWallViewController.h */,
+				AAA8872C1A46C40100FEE428 /* FRMainWallViewController.m */,
 				AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */,
 				AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */,
 				AAA8872E1A46C40100FEE428 /* Main.storyboard */,
@@ -115,6 +188,7 @@
 		AAA887211A46C40100FEE428 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA3111321A679315003384DC /* FRPrefix.pch */,
 				AAA887221A46C40100FEE428 /* Info.plist */,
 				AAA887231A46C40100FEE428 /* main.m */,
 			);
@@ -187,6 +261,7 @@
 				TargetAttributes = {
 					AAA8871D1A46C40100FEE428 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 52GHE2Q332;
 					};
 					AAA887391A46C40100FEE428 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -218,10 +293,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3111311A678C8D003384DC /* whiteLogo.png in Resources */,
+				AA3111281A678295003384DC /* navyThumb.png in Resources */,
 				AAA887301A46C40100FEE428 /* Main.storyboard in Resources */,
-				AA3111091A5E704C003384DC /* img1.png in Resources */,
+				AA3111091A5E704C003384DC /* img2.png in Resources */,
 				AAA887351A46C40100FEE428 /* LaunchScreen.xib in Resources */,
+				AA31110C1A64E62E003384DC /* profile1.png in Resources */,
+				AA3111271A678295003384DC /* blueThumb.png in Resources */,
 				AAA887321A46C40100FEE428 /* Images.xcassets in Resources */,
+				AA3111261A678295003384DC /* blackThumb.png in Resources */,
+				AA31112E1A678AB2003384DC /* logo.png in Resources */,
+				AA31112A1A6782D4003384DC /* profile0.png in Resources */,
+				AA3111201A677CF5003384DC /* img1.png in Resources */,
+				AA31112C1A6788D3003384DC /* plusButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +326,13 @@
 				AAA887271A46C40100FEE428 /* AppDelegate.m in Sources */,
 				AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */,
 				AAA887241A46C40100FEE428 /* main.m in Sources */,
-				AAA8872D1A46C40100FEE428 /* ViewController.m in Sources */,
+				AAA8872D1A46C40100FEE428 /* FRMainWallViewController.m in Sources */,
+				AA3111171A64F768003384DC /* JPGlobal.m in Sources */,
+				AA31111E1A64FBA8003384DC /* UIColor+RGBValues.m in Sources */,
+				AA31111A1A64F768003384DC /* JPFont.m in Sources */,
+				AA3111181A64F768003384DC /* NSObject+JPConvenience.m in Sources */,
 				AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */,
+				AA3111191A64F768003384DC /* JPStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,9 +454,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/Main/Documents/Fraze/Fraze/Fraze/FRPrefix.pch;
 				INFOPLIST_FILE = Fraze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -375,9 +469,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/Main/Documents/Fraze/Fraze/Fraze/FRPrefix.pch;
 				INFOPLIST_FILE = Fraze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

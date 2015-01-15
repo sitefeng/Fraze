@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@interface FRMainWallViewController : UIViewController <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 
 @property (weak, nonatomic) IBOutlet UICollectionView *mainCollectionView;

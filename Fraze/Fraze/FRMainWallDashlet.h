@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *subtitle;
 @property (weak, nonatomic) IBOutlet UILabel *sideLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+@property (weak, nonatomic) IBOutlet UIButton *upVoteButton;
 
 - (void)setup;
 
