@@ -33,6 +33,11 @@
 		AA5176BB1A68F72D00C0859D /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B31A68F72D00C0859D /* settingsIcon.png */; };
 		AA5176BC1A68F72D00C0859D /* shareIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B41A68F72D00C0859D /* shareIcon.png */; };
 		AA5176BD1A68F72D00C0859D /* signOutIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B51A68F72D00C0859D /* signOutIcon.png */; };
+		AA5176C11A69137F00C0859D /* FRNotifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176C01A69137F00C0859D /* FRNotifViewController.m */; };
+		AA5176C41A6914FC00C0859D /* FRNotifRequestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176C31A6914FC00C0859D /* FRNotifRequestCell.m */; };
+		AA5176C71A69150C00C0859D /* FRNotifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176C61A69150C00C0859D /* FRNotifCell.m */; };
+		AA5176C91A691CAE00C0859D /* profile3.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176C81A691CAE00C0859D /* profile3.png */; };
+		AA5176CB1A69277800C0859D /* FRNotifCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5176CA1A69277800C0859D /* FRNotifCell.xib */; };
 		AAA887241A46C40100FEE428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887231A46C40100FEE428 /* main.m */; };
 		AAA887271A46C40100FEE428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887261A46C40100FEE428 /* AppDelegate.m */; };
 		AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */; };
@@ -91,6 +96,14 @@
 		AA5176B31A68F72D00C0859D /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsIcon.png; sourceTree = "<group>"; };
 		AA5176B41A68F72D00C0859D /* shareIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareIcon.png; sourceTree = "<group>"; };
 		AA5176B51A68F72D00C0859D /* signOutIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signOutIcon.png; sourceTree = "<group>"; };
+		AA5176BF1A69137F00C0859D /* FRNotifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotifViewController.h; sourceTree = "<group>"; };
+		AA5176C01A69137F00C0859D /* FRNotifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotifViewController.m; sourceTree = "<group>"; };
+		AA5176C21A6914FC00C0859D /* FRNotifRequestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotifRequestCell.h; sourceTree = "<group>"; };
+		AA5176C31A6914FC00C0859D /* FRNotifRequestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotifRequestCell.m; sourceTree = "<group>"; };
+		AA5176C51A69150C00C0859D /* FRNotifCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotifCell.h; sourceTree = "<group>"; };
+		AA5176C61A69150C00C0859D /* FRNotifCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotifCell.m; sourceTree = "<group>"; };
+		AA5176C81A691CAE00C0859D /* profile3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile3.png; sourceTree = "<group>"; };
+		AA5176CA1A69277800C0859D /* FRNotifCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRNotifCell.xib; sourceTree = "<group>"; };
 		AAA8871E1A46C40100FEE428 /* Fraze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fraze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA887221A46C40100FEE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA887231A46C40100FEE428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				AA5176BE1A68F73400C0859D /* profile */,
+				AA5176C81A691CAE00C0859D /* profile3.png */,
 				AA3111301A678C8D003384DC /* whiteLogo.png */,
 				AA31112D1A678AB2003384DC /* logo.png */,
 				AA31112F1A678ABB003384DC /* Main Wall */,
@@ -216,6 +230,13 @@
 				AA5176A81A68F23B00C0859D /* PPIconButton.h */,
 				AA5176A91A68F23B00C0859D /* PPIconButton.m */,
 				AAA8872E1A46C40100FEE428 /* Main.storyboard */,
+				AA5176BF1A69137F00C0859D /* FRNotifViewController.h */,
+				AA5176C01A69137F00C0859D /* FRNotifViewController.m */,
+				AA5176C21A6914FC00C0859D /* FRNotifRequestCell.h */,
+				AA5176C31A6914FC00C0859D /* FRNotifRequestCell.m */,
+				AA5176CA1A69277800C0859D /* FRNotifCell.xib */,
+				AA5176C51A69150C00C0859D /* FRNotifCell.h */,
+				AA5176C61A69150C00C0859D /* FRNotifCell.m */,
 				AA5176AB1A68F35900C0859D /* dummyViewController.h */,
 				AA5176AC1A68F35900C0859D /* dummyViewController.m */,
 				AAA887311A46C40100FEE428 /* Images.xcassets */,
@@ -352,10 +373,12 @@
 				AA5176BA1A68F72D00C0859D /* profile2.png in Resources */,
 				AA31112E1A678AB2003384DC /* logo.png in Resources */,
 				AA31112A1A6782D4003384DC /* profile0.png in Resources */,
+				AA5176CB1A69277800C0859D /* FRNotifCell.xib in Resources */,
 				AA3111201A677CF5003384DC /* img1.png in Resources */,
 				AA5176B71A68F72D00C0859D /* friendsIcon.png in Resources */,
 				AA31112C1A6788D3003384DC /* plusButton.png in Resources */,
 				AA5176BB1A68F72D00C0859D /* settingsIcon.png in Resources */,
+				AA5176C91A691CAE00C0859D /* profile3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,11 +400,14 @@
 				AA5176AA1A68F23B00C0859D /* PPIconButton.m in Sources */,
 				AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */,
 				AAA887241A46C40100FEE428 /* main.m in Sources */,
+				AA5176C71A69150C00C0859D /* FRNotifCell.m in Sources */,
+				AA5176C11A69137F00C0859D /* FRNotifViewController.m in Sources */,
 				AAA8872D1A46C40100FEE428 /* FRMainWallViewController.m in Sources */,
 				AA3111171A64F768003384DC /* JPGlobal.m in Sources */,
 				AA31111E1A64FBA8003384DC /* UIColor+RGBValues.m in Sources */,
 				AA5176AD1A68F35900C0859D /* dummyViewController.m in Sources */,
 				AA31111A1A64F768003384DC /* JPFont.m in Sources */,
+				AA5176C41A6914FC00C0859D /* FRNotifRequestCell.m in Sources */,
 				AA3111181A64F768003384DC /* NSObject+JPConvenience.m in Sources */,
 				AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */,
 				AA3111191A64F768003384DC /* JPStyle.m in Sources */,
