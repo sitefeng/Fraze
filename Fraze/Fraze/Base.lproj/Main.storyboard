@@ -230,7 +230,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tH-xN-7hH" userLabel="Icon Button 1" customClass="PPIconButton">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tH-xN-7hH" userLabel="Icon Button 1" customClass="PPIconButton">
                                 <rect key="frame" x="228" y="293" width="145" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -243,7 +243,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfp-aV-wFa" userLabel="Icon Button 2" customClass="PPIconButton">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfp-aV-wFa" userLabel="Icon Button 2" customClass="PPIconButton">
                                 <rect key="frame" x="228" y="334" width="145" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -256,7 +256,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jA4-qO-c3b" userLabel="Icon Button 3" customClass="PPIconButton">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jA4-qO-c3b" userLabel="Icon Button 3" customClass="PPIconButton">
                                 <rect key="frame" x="228" y="375" width="145" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -269,7 +269,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBE-B9-rVO" userLabel="Icon Button 4" customClass="PPIconButton">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBE-B9-rVO" userLabel="Icon Button 4" customClass="PPIconButton">
                                 <rect key="frame" x="228" y="416" width="145" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -282,37 +282,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-13-X6G" userLabel="Icon Button 6" customClass="PPIconButton">
-                                <rect key="frame" x="228" y="498" width="145" height="33"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="blP-vY-huJ"/>
-                                    <constraint firstAttribute="width" constant="145" id="xqM-8S-Bf3"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="rect" keyPath="buttonFrame">
-                                        <rect key="value" x="0.0" y="0.0" width="145" height="33"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjC-Un-U7I">
-                                <rect key="frame" x="273" y="544" width="54" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="bKa-ZE-WQZ"/>
-                                    <constraint firstAttribute="width" constant="54" id="iKX-TU-jLS"/>
-                                </constraints>
-                                <state key="normal" title="Dismiss">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eah-Ly-iBn">
-                                <rect key="frame" x="213" y="34" width="175" height="175"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="R53-FT-XtY"/>
-                                    <constraint firstAttribute="height" constant="175" id="cgh-P1-eoi"/>
-                                </constraints>
-                            </imageView>
-                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqJ-ox-grz" userLabel="Icon Button 5" customClass="PPIconButton">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqJ-ox-grz" userLabel="Icon Button 5" customClass="PPIconButton">
                                 <rect key="frame" x="228" y="457" width="145" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -325,17 +295,46 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjC-Un-U7I">
+                                <rect key="frame" x="283" y="545" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bKa-ZE-WQZ"/>
+                                    <constraint firstAttribute="width" constant="35" id="iKX-TU-jLS"/>
+                                </constraints>
+                                <state key="normal" image="crossIcon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eah-Ly-iBn">
+                                <rect key="frame" x="213" y="34" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="R53-FT-XtY"/>
+                                    <constraint firstAttribute="height" constant="175" id="cgh-P1-eoi"/>
+                                </constraints>
+                            </imageView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-13-X6G" userLabel="Icon Button 6" customClass="PPIconButton">
+                                <rect key="frame" x="228" y="498" width="145" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="blP-vY-huJ"/>
+                                    <constraint firstAttribute="width" constant="145" id="xqM-8S-Bf3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="buttonFrame">
+                                        <rect key="value" x="0.0" y="0.0" width="145" height="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.16862745098039217" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Px-Yr-exR" firstAttribute="top" secondItem="nmJ-Kg-RTU" secondAttribute="bottom" constant="-4" id="5B6-qq-HYk"/>
                             <constraint firstAttribute="centerX" secondItem="qfp-aV-wFa" secondAttribute="centerX" id="Acx-EZ-fBG"/>
-                            <constraint firstItem="bjC-Un-U7I" firstAttribute="top" secondItem="FQE-13-X6G" secondAttribute="bottom" constant="50" id="B1g-En-zNj"/>
                             <constraint firstAttribute="centerX" secondItem="FQE-13-X6G" secondAttribute="centerX" id="Bra-rk-z8h"/>
                             <constraint firstItem="qfp-aV-wFa" firstAttribute="top" secondItem="8tH-xN-7hH" secondAttribute="bottom" priority="250" constant="8" id="IUj-1Z-ouf"/>
                             <constraint firstAttribute="centerX" secondItem="nmJ-Kg-RTU" secondAttribute="centerX" id="KjV-M5-xWv"/>
                             <constraint firstAttribute="centerX" secondItem="RBE-B9-rVO" secondAttribute="centerX" id="L2X-aK-ieu"/>
-                            <constraint firstItem="nqL-xR-yCx" firstAttribute="top" secondItem="bjC-Un-U7I" secondAttribute="bottom" constant="50" id="Rw6-GZ-4QE"/>
+                            <constraint firstItem="nqL-xR-yCx" firstAttribute="top" secondItem="bjC-Un-U7I" secondAttribute="bottom" constant="20" id="Rw6-GZ-4QE"/>
                             <constraint firstItem="FQE-13-X6G" firstAttribute="top" secondItem="wqJ-ox-grz" secondAttribute="bottom" priority="250" constant="8" id="ScA-Fw-lgC"/>
                             <constraint firstItem="jA4-qO-c3b" firstAttribute="top" secondItem="qfp-aV-wFa" secondAttribute="bottom" priority="250" constant="8" id="Xpx-oh-ETh"/>
                             <constraint firstAttribute="centerX" secondItem="5Px-Yr-exR" secondAttribute="centerX" id="aHT-tn-q5g"/>
@@ -346,9 +345,9 @@
                             <constraint firstItem="eah-Ly-iBn" firstAttribute="top" secondItem="idE-Mq-YB9" secondAttribute="bottom" constant="14" id="sa2-gf-WvP"/>
                             <constraint firstAttribute="centerX" secondItem="eah-Ly-iBn" secondAttribute="centerX" id="vEt-Wo-esM"/>
                             <constraint firstItem="wqJ-ox-grz" firstAttribute="top" secondItem="RBE-B9-rVO" secondAttribute="bottom" priority="250" constant="8" id="x0G-ns-1VR"/>
-                            <constraint firstAttribute="centerX" secondItem="bjC-Un-U7I" secondAttribute="centerX" id="xba-Gp-NR0"/>
+                            <constraint firstAttribute="centerX" secondItem="bjC-Un-U7I" secondAttribute="centerX" constant="-0.5" id="xba-Gp-NR0"/>
                             <constraint firstAttribute="centerX" secondItem="wqJ-ox-grz" secondAttribute="centerX" id="xbl-y0-sYm"/>
-                            <constraint firstItem="nmJ-Kg-RTU" firstAttribute="top" secondItem="eah-Ly-iBn" secondAttribute="bottom" constant="15" id="yCQ-A4-TB9"/>
+                            <constraint firstItem="nmJ-Kg-RTU" firstAttribute="top" secondItem="eah-Ly-iBn" secondAttribute="bottom" constant="16" id="yCQ-A4-TB9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -369,6 +368,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="crossIcon.png" width="49" height="52"/>
         <image name="profile2.png" width="290" height="301"/>
     </resources>
 </document>
