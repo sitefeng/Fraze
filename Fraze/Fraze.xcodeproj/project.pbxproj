@@ -29,7 +29,7 @@
 		AA31112E1A678AB2003384DC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31112D1A678AB2003384DC /* logo.png */; };
 		AA3111311A678C8D003384DC /* whiteLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111301A678C8D003384DC /* whiteLogo.png */; };
 		AA5176AA1A68F23B00C0859D /* PPIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176A91A68F23B00C0859D /* PPIconButton.m */; };
-		AA5176AD1A68F35900C0859D /* dummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176AC1A68F35900C0859D /* dummyViewController.m */; };
+		AA5176AD1A68F35900C0859D /* FRProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176AC1A68F35900C0859D /* FRProfileViewController.m */; };
 		AA5176B61A68F72D00C0859D /* crossIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176AE1A68F72D00C0859D /* crossIcon.png */; };
 		AA5176B71A68F72D00C0859D /* friendsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176AF1A68F72D00C0859D /* friendsIcon.png */; };
 		AA5176B81A68F72D00C0859D /* groupsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B01A68F72D00C0859D /* groupsIcon.png */; };
@@ -42,7 +42,6 @@
 		AA5176C41A6914FC00C0859D /* FRNotifRequestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176C31A6914FC00C0859D /* FRNotifRequestCell.m */; };
 		AA5176C71A69150C00C0859D /* FRNotifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176C61A69150C00C0859D /* FRNotifCell.m */; };
 		AA5176C91A691CAE00C0859D /* profile3.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176C81A691CAE00C0859D /* profile3.png */; };
-		AA5176CB1A69277800C0859D /* FRNotifCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5176CA1A69277800C0859D /* FRNotifCell.xib */; };
 		AAA887241A46C40100FEE428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887231A46C40100FEE428 /* main.m */; };
 		AAA887271A46C40100FEE428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA887261A46C40100FEE428 /* AppDelegate.m */; };
 		AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */; };
@@ -97,8 +96,8 @@
 		AA3111321A679315003384DC /* FRPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FRPrefix.pch; path = /Users/Main/Documents/Fraze/Fraze/Fraze/FRPrefix.pch; sourceTree = "<absolute>"; };
 		AA5176A81A68F23B00C0859D /* PPIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPIconButton.h; sourceTree = "<group>"; };
 		AA5176A91A68F23B00C0859D /* PPIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPIconButton.m; sourceTree = "<group>"; };
-		AA5176AB1A68F35900C0859D /* dummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummyViewController.h; sourceTree = "<group>"; };
-		AA5176AC1A68F35900C0859D /* dummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dummyViewController.m; sourceTree = "<group>"; };
+		AA5176AB1A68F35900C0859D /* FRProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRProfileViewController.h; sourceTree = "<group>"; };
+		AA5176AC1A68F35900C0859D /* FRProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRProfileViewController.m; sourceTree = "<group>"; };
 		AA5176AE1A68F72D00C0859D /* crossIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossIcon.png; sourceTree = "<group>"; };
 		AA5176AF1A68F72D00C0859D /* friendsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendsIcon.png; sourceTree = "<group>"; };
 		AA5176B01A68F72D00C0859D /* groupsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groupsIcon.png; sourceTree = "<group>"; };
@@ -114,7 +113,6 @@
 		AA5176C51A69150C00C0859D /* FRNotifCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotifCell.h; sourceTree = "<group>"; };
 		AA5176C61A69150C00C0859D /* FRNotifCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotifCell.m; sourceTree = "<group>"; };
 		AA5176C81A691CAE00C0859D /* profile3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile3.png; sourceTree = "<group>"; };
-		AA5176CA1A69277800C0859D /* FRNotifCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRNotifCell.xib; sourceTree = "<group>"; };
 		AAA8871E1A46C40100FEE428 /* Fraze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fraze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA887221A46C40100FEE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA887231A46C40100FEE428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -251,11 +249,10 @@
 				AA5176C01A69137F00C0859D /* FRNotifViewController.m */,
 				AA5176C21A6914FC00C0859D /* FRNotifRequestCell.h */,
 				AA5176C31A6914FC00C0859D /* FRNotifRequestCell.m */,
-				AA5176CA1A69277800C0859D /* FRNotifCell.xib */,
 				AA5176C51A69150C00C0859D /* FRNotifCell.h */,
 				AA5176C61A69150C00C0859D /* FRNotifCell.m */,
-				AA5176AB1A68F35900C0859D /* dummyViewController.h */,
-				AA5176AC1A68F35900C0859D /* dummyViewController.m */,
+				AA5176AB1A68F35900C0859D /* FRProfileViewController.h */,
+				AA5176AC1A68F35900C0859D /* FRProfileViewController.m */,
 				AAA887311A46C40100FEE428 /* Images.xcassets */,
 				AAA887331A46C40100FEE428 /* LaunchScreen.xib */,
 				AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */,
@@ -394,7 +391,6 @@
 				AA31112E1A678AB2003384DC /* logo.png in Resources */,
 				445356551A68BE530096FCB5 /* notifIcon2.png in Resources */,
 				AA31112A1A6782D4003384DC /* profile0.png in Resources */,
-				AA5176CB1A69277800C0859D /* FRNotifCell.xib in Resources */,
 				AA3111201A677CF5003384DC /* img1.png in Resources */,
 				AA5176B71A68F72D00C0859D /* friendsIcon.png in Resources */,
 				AA31112C1A6788D3003384DC /* plusButton.png in Resources */,
@@ -426,7 +422,7 @@
 				AAA8872D1A46C40100FEE428 /* FRMainWallViewController.m in Sources */,
 				AA3111171A64F768003384DC /* JPGlobal.m in Sources */,
 				AA31111E1A64FBA8003384DC /* UIColor+RGBValues.m in Sources */,
-				AA5176AD1A68F35900C0859D /* dummyViewController.m in Sources */,
+				AA5176AD1A68F35900C0859D /* FRProfileViewController.m in Sources */,
 				AA31111A1A64F768003384DC /* JPFont.m in Sources */,
 				445356651A68E8B00096FCB5 /* FRMainNavigationController.m in Sources */,
 				AA5176C41A6914FC00C0859D /* FRNotifRequestCell.m in Sources */,

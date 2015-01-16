@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Si Te Feng. All rights reserved.
 //
 
-#import "dummyViewController.h"
+#import "FRProfileViewController.h"
 #import "PPIconButton.h"
 
-@interface dummyViewController ()
+@interface FRProfileViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subLabel;
 @property (strong, nonatomic) IBOutletCollection(PPIconButton) NSArray *profileButtons;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation dummyViewController
+@implementation FRProfileViewController
 
 
 - (void)viewDidLoad {

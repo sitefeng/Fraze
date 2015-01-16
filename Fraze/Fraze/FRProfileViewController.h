@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface dummyViewController : UIViewController
+@interface FRProfileViewController : UIViewController
 
 @end

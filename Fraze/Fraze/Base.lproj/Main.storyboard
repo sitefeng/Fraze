@@ -342,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="747" y="1036"/>
         </scene>
-        <!--Dummy View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Kho-wB-LWi">
             <objects>
-                <viewController id="bER-ua-Qij" customClass="dummyViewController" sceneMemberID="viewController">
+                <viewController id="bER-ua-Qij" customClass="FRProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="idE-Mq-YB9"/>
                         <viewControllerLayoutGuide type="bottom" id="nqL-xR-yCx"/>
@@ -364,7 +364,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@fengsite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Px-Yr-exR">
-                                <rect key="frame" x="269" y="250" width="62.5" height="21"/>
+                                <rect key="frame" x="269" y="250" width="63" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="PaS-Ax-9qj"/>
                                 </constraints>
