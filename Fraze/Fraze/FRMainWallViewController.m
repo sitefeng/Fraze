@@ -24,16 +24,25 @@ const float kDashletWidthFactor = 0.95;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.automaticallyAdjustsScrollViewInsets = YES;
-    
+
+    //Setup Navigation Bar
     [self.navigationController.navigationBar setBarTintColor:[JPStyle interfaceTintColor]];
     
     UIImageView* titleView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
     titleView.image = [UIImage imageNamed:@"whiteLogo"];
     titleView.contentMode = UIViewContentModeScaleAspectFit;
     self.navigationItem.titleView = titleView;
-    
+
+    UIButton* leftBarButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [leftBarButton setImage:[UIImage imageNamed:@"notifIcon2"] forState:UIControlStateNormal];
+    [leftBarButton addTarget:self action:@selector(leftBarButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
+
+    UIButton* rightBarButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [rightBarButton setImage:[UIImage imageNamed:@"searchIcon"] forState:UIControlStateNormal];
+    [rightBarButton addTarget:self action:@selector(rightBarButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBarButton];
+
     [self.plusButton setImage:[UIImage imageNamed:@"plusButton"] forState:UIControlStateNormal];
     
     [self.mainCollectionView setDelegate:self];
@@ -51,6 +60,9 @@ const float kDashletWidthFactor = 0.95;
     
     
 }
+
+
+
 
 
 
@@ -112,6 +124,24 @@ const float kDashletWidthFactor = 0.95;
     CGSize newSize = CGSizeMake(kDashletWidthFactor*[JPStyle deviceWidth], 350);
     return newSize;
 }
+
+
+
+
+
+
+#pragma mark - Navigational Controls
+
+- (void)leftBarButtonPressed
+{
+
+}
+
+- (void)rightBarButtonPressed
+{
+
+}
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445356531A68BE530096FCB5 /* notifIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4453564F1A68BE530096FCB5 /* notifIcon.png */; };
+		445356541A68BE530096FCB5 /* notifIcon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 445356501A68BE530096FCB5 /* notifIcon1.png */; };
+		445356551A68BE530096FCB5 /* notifIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 445356511A68BE530096FCB5 /* notifIcon2.png */; };
+		445356561A68BE530096FCB5 /* searchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 445356521A68BE530096FCB5 /* searchIcon.png */; };
+		445356651A68E8B00096FCB5 /* FRMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445356641A68E8B00096FCB5 /* FRMainNavigationController.m */; };
 		AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */; };
 		AA3111091A5E704C003384DC /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111081A5E704C003384DC /* img2.png */; };
 		AA31110C1A64E62E003384DC /* profile1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31110B1A64E62E003384DC /* profile1.png */; };
@@ -44,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4453564F1A68BE530096FCB5 /* notifIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifIcon.png; sourceTree = "<group>"; };
+		445356501A68BE530096FCB5 /* notifIcon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifIcon1.png; sourceTree = "<group>"; };
+		445356511A68BE530096FCB5 /* notifIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifIcon2.png; sourceTree = "<group>"; };
+		445356521A68BE530096FCB5 /* searchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchIcon.png; sourceTree = "<group>"; };
+		445356631A68E8B00096FCB5 /* FRMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainNavigationController.h; sourceTree = "<group>"; };
+		445356641A68E8B00096FCB5 /* FRMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainNavigationController.m; sourceTree = "<group>"; };
 		AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainWallDashlet.h; sourceTree = "<group>"; };
 		AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainWallDashlet.m; sourceTree = "<group>"; };
 		AA3111081A5E704C003384DC /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
@@ -108,6 +119,10 @@
 			children = (
 				AA3111301A678C8D003384DC /* whiteLogo.png */,
 				AA31112D1A678AB2003384DC /* logo.png */,
+				4453564F1A68BE530096FCB5 /* notifIcon.png */,
+				445356501A68BE530096FCB5 /* notifIcon1.png */,
+				445356511A68BE530096FCB5 /* notifIcon2.png */,
+				445356521A68BE530096FCB5 /* searchIcon.png */,
 				AA31112F1A678ABB003384DC /* Main Wall */,
 			);
 			name = Images;
@@ -176,6 +191,8 @@
 				AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */,
 				AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */,
 				AAA8872E1A46C40100FEE428 /* Main.storyboard */,
+				445356631A68E8B00096FCB5 /* FRMainNavigationController.h */,
+				445356641A68E8B00096FCB5 /* FRMainNavigationController.m */,
 				AAA887311A46C40100FEE428 /* Images.xcassets */,
 				AAA887331A46C40100FEE428 /* LaunchScreen.xib */,
 				AAA887281A46C40100FEE428 /* Fraze.xcdatamodeld */,
@@ -298,11 +315,15 @@
 				AAA887301A46C40100FEE428 /* Main.storyboard in Resources */,
 				AA3111091A5E704C003384DC /* img2.png in Resources */,
 				AAA887351A46C40100FEE428 /* LaunchScreen.xib in Resources */,
+				445356531A68BE530096FCB5 /* notifIcon.png in Resources */,
 				AA31110C1A64E62E003384DC /* profile1.png in Resources */,
+				445356561A68BE530096FCB5 /* searchIcon.png in Resources */,
+				445356541A68BE530096FCB5 /* notifIcon1.png in Resources */,
 				AA3111271A678295003384DC /* blueThumb.png in Resources */,
 				AAA887321A46C40100FEE428 /* Images.xcassets in Resources */,
 				AA3111261A678295003384DC /* blackThumb.png in Resources */,
 				AA31112E1A678AB2003384DC /* logo.png in Resources */,
+				445356551A68BE530096FCB5 /* notifIcon2.png in Resources */,
 				AA31112A1A6782D4003384DC /* profile0.png in Resources */,
 				AA3111201A677CF5003384DC /* img1.png in Resources */,
 				AA31112C1A6788D3003384DC /* plusButton.png in Resources */,
@@ -330,6 +351,7 @@
 				AA3111171A64F768003384DC /* JPGlobal.m in Sources */,
 				AA31111E1A64FBA8003384DC /* UIColor+RGBValues.m in Sources */,
 				AA31111A1A64F768003384DC /* JPFont.m in Sources */,
+				445356651A68E8B00096FCB5 /* FRMainNavigationController.m in Sources */,
 				AA3111181A64F768003384DC /* NSObject+JPConvenience.m in Sources */,
 				AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */,
 				AA3111191A64F768003384DC /* JPStyle.m in Sources */,
