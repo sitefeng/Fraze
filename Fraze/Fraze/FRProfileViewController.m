@@ -33,8 +33,8 @@
     self.profileImgView.clipsToBounds = YES;
     self.profileImgView.layer.cornerRadius = self.profileImgView.frame.size.width/2;
     
-    NSArray* imgNames = @[@"signOutIcon",@"settingsIcon",@"friendsIcon",@"groupsIcon",@"legalIcon",@"shareIcon"];
-    NSArray* buttonNames = @[@"Log Out",@"Settings",@"Friends",@"Groups",@"Legal",@"Share"];
+    NSArray* imgNames = @[@"signOutIcon",@"settingsIcon",@"editIcon",@"friendsIcon",@"legalIcon",@"shareIcon"];
+    NSArray* buttonNames = @[@"Log Out",@"Settings",@"Edit Profile",@"Friends",@"Legal",@"Share"];
     
     for(int i=0; i<6; i++) {
         

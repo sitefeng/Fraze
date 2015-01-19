@@ -1,20 +1,18 @@
 //
-//  FRMessagesSearchCell.m
+//  FRMessagesActionCell.m
 //  Fraze
 //
 //  Created by Si Te Feng on 1/18/15.
 //  Copyright (c) 2015 Si Te Feng. All rights reserved.
 //
 
-#import "FRMessagesSearchCell.h"
+#import "FRMessagesActionCell.h"
 
-@implementation FRMessagesSearchCell
+@implementation FRMessagesActionCell
 
-- (void)setup
-{
-    self.searchTextField.clearButtonMode = UITextFieldViewModeAlways;
+- (void)awakeFromNib {
+    // Initialization code
 }
-
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

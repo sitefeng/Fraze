@@ -30,6 +30,10 @@
 		AA0D8D351A6CD1BA00404104 /* FRMessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0D8D341A6CD1BA00404104 /* FRMessagesCell.m */; };
 		AA0D8D381A6CD1C900404104 /* FRMessagesSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0D8D371A6CD1C900404104 /* FRMessagesSearchCell.m */; };
 		AA0D8D3C1A6CD32100404104 /* dropdownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0D8D3B1A6CD32100404104 /* dropdownArrow.png */; };
+		AA0D8D3F1A6CE80A00404104 /* FRMessagesActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0D8D3E1A6CE80A00404104 /* FRMessagesActionCell.m */; };
+		AA0D8D411A6CF09800404104 /* thickCrossIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0D8D401A6CF09800404104 /* thickCrossIcon.png */; };
+		AA0D8D431A6CF0F700404104 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0D8D421A6CF0F700404104 /* plus.png */; };
+		AA0D8D451A6CF10D00404104 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0D8D441A6CF10D00404104 /* list.png */; };
 		AA3111071A5E6A10003384DC /* FRMainWallDashlet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */; };
 		AA3111091A5E704C003384DC /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3111081A5E704C003384DC /* img2.png */; };
 		AA31110C1A64E62E003384DC /* profile1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA31110B1A64E62E003384DC /* profile1.png */; };
@@ -50,7 +54,7 @@
 		AA5176AD1A68F35900C0859D /* FRProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5176AC1A68F35900C0859D /* FRProfileViewController.m */; };
 		AA5176B61A68F72D00C0859D /* crossIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176AE1A68F72D00C0859D /* crossIcon.png */; };
 		AA5176B71A68F72D00C0859D /* friendsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176AF1A68F72D00C0859D /* friendsIcon.png */; };
-		AA5176B81A68F72D00C0859D /* groupsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B01A68F72D00C0859D /* groupsIcon.png */; };
+		AA5176B81A68F72D00C0859D /* editIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B01A68F72D00C0859D /* editIcon.png */; };
 		AA5176B91A68F72D00C0859D /* legalIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B11A68F72D00C0859D /* legalIcon.png */; };
 		AA5176BA1A68F72D00C0859D /* profile2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B21A68F72D00C0859D /* profile2.png */; };
 		AA5176BB1A68F72D00C0859D /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5176B31A68F72D00C0859D /* settingsIcon.png */; };
@@ -110,6 +114,11 @@
 		AA0D8D361A6CD1C900404104 /* FRMessagesSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMessagesSearchCell.h; sourceTree = "<group>"; };
 		AA0D8D371A6CD1C900404104 /* FRMessagesSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMessagesSearchCell.m; sourceTree = "<group>"; };
 		AA0D8D3B1A6CD32100404104 /* dropdownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdownArrow.png; sourceTree = "<group>"; };
+		AA0D8D3D1A6CE80A00404104 /* FRMessagesActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMessagesActionCell.h; sourceTree = "<group>"; };
+		AA0D8D3E1A6CE80A00404104 /* FRMessagesActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMessagesActionCell.m; sourceTree = "<group>"; };
+		AA0D8D401A6CF09800404104 /* thickCrossIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thickCrossIcon.png; sourceTree = "<group>"; };
+		AA0D8D421A6CF0F700404104 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		AA0D8D441A6CF10D00404104 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		AA3111051A5E6A10003384DC /* FRMainWallDashlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainWallDashlet.h; sourceTree = "<group>"; };
 		AA3111061A5E6A10003384DC /* FRMainWallDashlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainWallDashlet.m; sourceTree = "<group>"; };
 		AA3111081A5E704C003384DC /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
@@ -141,7 +150,7 @@
 		AA5176AC1A68F35900C0859D /* FRProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRProfileViewController.m; sourceTree = "<group>"; };
 		AA5176AE1A68F72D00C0859D /* crossIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossIcon.png; sourceTree = "<group>"; };
 		AA5176AF1A68F72D00C0859D /* friendsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendsIcon.png; sourceTree = "<group>"; };
-		AA5176B01A68F72D00C0859D /* groupsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groupsIcon.png; sourceTree = "<group>"; };
+		AA5176B01A68F72D00C0859D /* editIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editIcon.png; sourceTree = "<group>"; };
 		AA5176B11A68F72D00C0859D /* legalIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legalIcon.png; sourceTree = "<group>"; };
 		AA5176B21A68F72D00C0859D /* profile2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile2.png; sourceTree = "<group>"; };
 		AA5176B31A68F72D00C0859D /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsIcon.png; sourceTree = "<group>"; };
@@ -250,6 +259,7 @@
 		AA0D8D301A6CCF5600404104 /* ICONS */ = {
 			isa = PBXGroup;
 			children = (
+				AA0D8D401A6CF09800404104 /* thickCrossIcon.png */,
 				AA0D8D3B1A6CD32100404104 /* dropdownArrow.png */,
 				AA0D8D311A6CD04500404104 /* searchIcon.png */,
 				AA0D8D2C1A6CCF5100404104 /* messageRead.png */,
@@ -267,6 +277,8 @@
 				AA0D8D371A6CD1C900404104 /* FRMessagesSearchCell.m */,
 				AA0D8D331A6CD1BA00404104 /* FRMessagesCell.h */,
 				AA0D8D341A6CD1BA00404104 /* FRMessagesCell.m */,
+				AA0D8D3D1A6CE80A00404104 /* FRMessagesActionCell.h */,
+				AA0D8D3E1A6CE80A00404104 /* FRMessagesActionCell.m */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -336,9 +348,11 @@
 		AA5176BE1A68F73400C0859D /* profile VC */ = {
 			isa = PBXGroup;
 			children = (
+				AA0D8D441A6CF10D00404104 /* list.png */,
+				AA0D8D421A6CF0F700404104 /* plus.png */,
 				AA5176AE1A68F72D00C0859D /* crossIcon.png */,
 				AA5176AF1A68F72D00C0859D /* friendsIcon.png */,
-				AA5176B01A68F72D00C0859D /* groupsIcon.png */,
+				AA5176B01A68F72D00C0859D /* editIcon.png */,
 				AA5176B11A68F72D00C0859D /* legalIcon.png */,
 				AA5176B31A68F72D00C0859D /* settingsIcon.png */,
 				AA5176B41A68F72D00C0859D /* shareIcon.png */,
@@ -493,11 +507,13 @@
 				AA3111311A678C8D003384DC /* whiteLogo.png in Resources */,
 				AA0D8D171A6CAB5500404104 /* checkButton.png in Resources */,
 				AA5176B61A68F72D00C0859D /* crossIcon.png in Resources */,
+				AA0D8D411A6CF09800404104 /* thickCrossIcon.png in Resources */,
 				AA3111281A678295003384DC /* navyThumb.png in Resources */,
 				AAA887301A46C40100FEE428 /* Main.storyboard in Resources */,
 				AA3111091A5E704C003384DC /* img2.png in Resources */,
 				AA0D8D3C1A6CD32100404104 /* dropdownArrow.png in Resources */,
 				AA0D8D281A6CCE7800404104 /* profile6.png in Resources */,
+				AA0D8D431A6CF0F700404104 /* plus.png in Resources */,
 				AAA887351A46C40100FEE428 /* LaunchScreen.xib in Resources */,
 				AA0D8D271A6CCE7800404104 /* profile5.png in Resources */,
 				445356531A68BE530096FCB5 /* notifIcon.png in Resources */,
@@ -511,7 +527,7 @@
 				AAA887321A46C40100FEE428 /* Images.xcassets in Resources */,
 				AA3111261A678295003384DC /* blackThumb.png in Resources */,
 				AA5176BD1A68F72D00C0859D /* signOutIcon.png in Resources */,
-				AA5176B81A68F72D00C0859D /* groupsIcon.png in Resources */,
+				AA5176B81A68F72D00C0859D /* editIcon.png in Resources */,
 				AA0D8D201A6CB6E800404104 /* profile4.png in Resources */,
 				AA0D8D1E1A6CB55200404104 /* checkmark1.png in Resources */,
 				AA5176BA1A68F72D00C0859D /* profile2.png in Resources */,
@@ -523,6 +539,7 @@
 				AA0D8D2F1A6CCF5100404104 /* messageUnread.png in Resources */,
 				AA5176B71A68F72D00C0859D /* friendsIcon.png in Resources */,
 				AA0D8D2A1A6CCE7800404104 /* profile8.png in Resources */,
+				AA0D8D451A6CF10D00404104 /* list.png in Resources */,
 				AA0D8D321A6CD04500404104 /* searchIcon.png in Resources */,
 				AA0D8D2E1A6CCF5100404104 /* messageRead.png in Resources */,
 				AA31112C1A6788D3003384DC /* plusButton.png in Resources */,
@@ -565,6 +582,7 @@
 				AA0D8D381A6CD1C900404104 /* FRMessagesSearchCell.m in Sources */,
 				AA3111181A64F768003384DC /* NSObject+JPConvenience.m in Sources */,
 				AA0D8D0F1A6C7E3800404104 /* FRMessagesViewController.m in Sources */,
+				AA0D8D3F1A6CE80A00404104 /* FRMessagesActionCell.m in Sources */,
 				AAA8872A1A46C40100FEE428 /* Fraze.xcdatamodeld in Sources */,
 				AA3111191A64F768003384DC /* JPStyle.m in Sources */,
 			);

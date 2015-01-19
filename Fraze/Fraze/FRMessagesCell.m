@@ -9,6 +9,10 @@
 #import "FRMessagesCell.h"
 
 @implementation FRMessagesCell
+{
+    id  _target;
+    SEL _selector;
+}
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -28,5 +32,21 @@
 
     // Configure the view for the selected state
 }
+
+
+- (IBAction)dropdownPressed:(id)sender
+{
+    [_target performSelector:_selector withObject:self afterDelay:0];
+    
+    
+}
+
+
+- (void)addDropdownTarget:(id)target selector:(SEL)selector
+{
+    _target = target;
+    _selector = selector;
+}
+
 
 @end

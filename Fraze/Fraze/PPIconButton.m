@@ -89,7 +89,7 @@ NSString* const pressedBackground = @"FFFFFF";
         UIImage* img = [[UIImage imageNamed:self.imageName] imageWithColor:[JPStyle colorWithHex:buttonColor alpha:1]];
         self.icon.image = img;
 
-        [_target performSelector:_action withObject:nil];
+        [_target performSelector:_action withObject:nil afterDelay:0];
     }
 }
 

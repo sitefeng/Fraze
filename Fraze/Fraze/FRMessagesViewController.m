@@ -10,9 +10,12 @@
 #import "FRMainNavigationController.h"
 #import "FRMessagesSearchCell.h"
 #import "FRMessagesCell.h"
+#import "FRMessagesActionCell.h"
 
 @interface FRMessagesViewController ()
-
+{
+    NSInteger _dropdownIndex;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 
@@ -25,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _dropdownIndex = -1;
 
     self.view.backgroundColor = [JPStyle interfaceTintColor];
     
@@ -46,24 +50,50 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSInteger rowNumber = 9;
     
-    return 10;
+    if(_dropdownIndex < 0)
+        return rowNumber;
+    else
+        return rowNumber+1;
 }
 
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.row==0) {
-        FRMessagesSearchCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"FRMessagesSearchCell"];
-        return cell;
+        FRMessagesSearchCell* searchCell = [self.tableView dequeueReusableCellWithIdentifier:@"FRMessagesSearchCell"];
+        [searchCell setup];
+        return searchCell;
+    }
+    
+    NSInteger rowNumber = indexPath.row;
+    
+    if(_dropdownIndex < 0)
+    {
+        rowNumber = indexPath.row -1;
+    }else {
+        if(indexPath.row < _dropdownIndex) {
+            rowNumber = indexPath.row -1;
+        }
+        else if(indexPath.row > _dropdownIndex) {
+            rowNumber = indexPath.row -2;
+        }
+        else //is dropdown row
+        {
+            FRMessagesActionCell* actionCell = [self.tableView dequeueReusableCellWithIdentifier:@"FRMessagesActionCell"];
+            return actionCell;
+        }
     }
     
     FRMessagesCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"FRMessagesCell"];
     [cell setup];
     
-    cell.profileImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"profile%d", indexPath.row]];
-    cell.nameLabel.text = [NSString stringWithFormat:@"Person %d", indexPath.row];
+    cell.profileImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"profile%ld", (long)indexPath.row]];
+    cell.nameLabel.text = [NSString stringWithFormat:@"Person %ld", (long)indexPath.row];
     cell.messageLabel.text = @"Hello there, how are you doing today? I was just going to tell you about all the amazing things that happened today.";
+    
+    [cell addDropdownTarget:self selector:@selector(dropdownButtonPressed:)];
     
     return cell;
     
@@ -80,6 +110,27 @@
 
 
 #pragma mark - Action Methods
+
+
+- (void)dropdownButtonPressed: (FRMessagesCell*)cell
+{
+    NSLog(@"dropdown button pressed");
+    NSInteger row = [self.tableView indexPathForCell:cell].row;
+    NSInteger prevDropDown = _dropdownIndex;
+    
+    if(_dropdownIndex > 0)
+    {
+        NSIndexPath* deleteIndexPath = [NSIndexPath indexPathForRow:_dropdownIndex inSection:0];
+        _dropdownIndex = -1;
+        [self.tableView deleteRowsAtIndexPaths:@[deleteIndexPath] withRowAnimation:UITableViewRowAnimationBottom];
+    }
+    if(prevDropDown != row+1)
+    {
+        _dropdownIndex = row+1;
+        NSIndexPath* addIndexPath = [NSIndexPath indexPathForRow:_dropdownIndex inSection:0];
+        [self.tableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+    }
+}
 
 
 - (IBAction)backButtonPressed:(id)sender

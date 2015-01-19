@@ -11,4 +11,6 @@
 @interface FRMessagesSearchCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 
+- (void)setup;
+
 @end
