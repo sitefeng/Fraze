@@ -9,9 +9,12 @@
 #import "FRNotifViewController.h"
 #import "FRNotifCell.h"
 #import "FRNotifRequestCell.h"
+#import "FRMainNavigationController.h"
 
 
 @interface FRNotifViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
@@ -23,12 +26,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     self.tableView.clipsToBounds = YES;
     self.tableView.layer.cornerRadius = 10;
     self.tableView.separatorInset = UIEdgeInsetsMake(0, -20, 0, 0);
-//    [self.tableView registerClass:[FRNotifCell class] forCellReuseIdentifier:@"FRNotifCell"];
-}
 
+}
 
 
 #pragma mark - UITableViewController DataSource
@@ -41,7 +45,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 12;
 }
 
 
@@ -60,15 +64,31 @@
 }
 
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//        return 65;
-//}
 
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
+
+
+
+- (IBAction)backButtonPressed:(id)sender
+{
+    [self retractViewController];
+}
+
+
+
+#pragma mark - Convenience Methods
+
+- (void)retractViewController
+{
+    FRMainNavigationController* navController = (FRMainNavigationController*)[self parentViewController];
+    [navController retractChildViewController:self];
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

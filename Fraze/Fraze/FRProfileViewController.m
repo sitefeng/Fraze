@@ -8,12 +8,17 @@
 
 #import "FRProfileViewController.h"
 #import "PPIconButton.h"
+#import "FRMainNavigationController.h"
 
 @interface FRProfileViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subLabel;
 @property (strong, nonatomic) IBOutletCollection(PPIconButton) NSArray *profileButtons;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImgView;
+
+@property (weak, nonatomic) IBOutlet UIButton *closeButton;
+
+
 
 @end
 
@@ -45,10 +50,29 @@
     
 }
 
+
 - (void)buttonPressed: (PPIconButton*)button {
     
     
     
+    
+}
+
+
+- (IBAction)closeButtonPressed:(id)sender
+{
+    [self retractViewController];
+    
+}
+
+
+
+#pragma mark - Convenience Methods
+
+- (void)retractViewController
+{
+    FRMainNavigationController* navController = (FRMainNavigationController*)[self parentViewController];
+    [navController retractChildViewController:self];
     
 }
 

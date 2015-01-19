@@ -9,6 +9,7 @@
 #import "FRMainWallViewController.h"
 #import "FRMainWallDashlet.h"
 #import "JPStyle.h"
+#import "FRMainNavigationController.h"
 
 const float kDashletWidthFactor = 0.95;
 
@@ -28,19 +29,25 @@ const float kDashletWidthFactor = 0.95;
     //Setup Navigation Bar
     [self.navigationController.navigationBar setBarTintColor:[JPStyle interfaceTintColor]];
     
-    UIImageView* titleView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-    titleView.image = [UIImage imageNamed:@"whiteLogo"];
-    titleView.contentMode = UIViewContentModeScaleAspectFit;
+    UIButton* titleView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    UIButton* titleButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    [titleButton setImage:[UIImage imageNamed:@"whiteLogo"] forState:UIControlStateNormal];
+    titleButton.contentMode = UIViewContentModeScaleAspectFit;
+    [titleButton addTarget:self.navigationController action:@selector(titlePressed) forControlEvents:UIControlEventTouchUpInside];
+    [titleView addSubview:titleButton];
     self.navigationItem.titleView = titleView;
-
+    
+    UIBarButtonItem* flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
     UIButton* leftBarButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
     [leftBarButton setImage:[UIImage imageNamed:@"notifIcon2"] forState:UIControlStateNormal];
-    [leftBarButton addTarget:self action:@selector(leftBarButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
+    [leftBarButton addTarget:self.navigationController action:@selector(leftBarButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem* leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
+    self.navigationItem.leftBarButtonItems = @[leftItem, flex];
 
     UIButton* rightBarButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
-    [rightBarButton setImage:[UIImage imageNamed:@"searchIcon"] forState:UIControlStateNormal];
-    [rightBarButton addTarget:self action:@selector(rightBarButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [rightBarButton setImage:[UIImage imageNamed:@"searchIcon1"] forState:UIControlStateNormal];
+    [rightBarButton addTarget:self.navigationController action:@selector(rightBarButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBarButton];
 
     [self.plusButton setImage:[UIImage imageNamed:@"plusButton"] forState:UIControlStateNormal];
@@ -73,9 +80,10 @@ const float kDashletWidthFactor = 0.95;
     
 }
 
-- (IBAction)plusButtonPressed:(id)sender {
-
-
+- (IBAction)plusButtonPressed:(id)sender
+{
+    FRMainNavigationController* navController = (FRMainNavigationController*)[self navigationController];
+    [navController newPostButtonPressed];
 }
 
 
@@ -130,17 +138,7 @@ const float kDashletWidthFactor = 0.95;
 
 
 
-#pragma mark - Navigational Controls
-
-- (void)leftBarButtonPressed
-{
-
-}
-
-- (void)rightBarButtonPressed
-{
-
-}
+#pragma mark - Application Lifecycle
 
 
 

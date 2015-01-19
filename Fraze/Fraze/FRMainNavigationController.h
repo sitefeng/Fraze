@@ -10,4 +10,14 @@
 
 @interface FRMainNavigationController : UINavigationController
 
+
+- (void)retractChildViewController: (UIViewController*)vc;
+
+
+- (void)newPostButtonPressed;
+- (void)leftBarButtonPressed;
+- (void)rightBarButtonPressed;
+- (void)titlePressed;
+
+
 @end

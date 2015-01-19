@@ -103,6 +103,11 @@
     return [JPStyle colorWithHex:@"202B3F" alpha:1];
 }
 
++(UIColor*) defaultBlueColor
+{
+    return [JPStyle colorWithHex:@"2E5FD1" alpha:1];
+}
+
 +(void)applyGlobalStyle
 {
     [[UINavigationBar appearance] setTintColor:[JPStyle interfaceTintColor]];

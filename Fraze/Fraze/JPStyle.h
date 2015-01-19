@@ -33,6 +33,7 @@
 
 //Default app theme
 +(UIColor*) interfaceTintColor;
++(UIColor*) defaultBlueColor;
 +(void)applyGlobalStyle;
 
 
