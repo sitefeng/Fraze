@@ -34,6 +34,7 @@
     
     self.tableView.clipsToBounds = YES;
     self.tableView.layer.cornerRadius = 10;
+    self.tableView.backgroundColor = [UIColor clearColor];
     
     UITapGestureRecognizer* backgroundViewTapRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundTapped)];
     [self.view addGestureRecognizer:backgroundViewTapRec];
@@ -50,12 +51,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSInteger rowNumber = 9;
+    NSInteger numRows = 9;
     
     if(_dropdownIndex < 0)
-        return rowNumber;
+        return numRows;
     else
-        return rowNumber+1;
+        return numRows+1;
 }
 
 
@@ -71,17 +72,20 @@
     
     if(_dropdownIndex < 0)
     {
-        rowNumber = indexPath.row -1;
-    }else {
+        rowNumber = indexPath.row;
+    }
+    else
+    {
         if(indexPath.row < _dropdownIndex) {
-            rowNumber = indexPath.row -1;
+            rowNumber = indexPath.row;
         }
         else if(indexPath.row > _dropdownIndex) {
-            rowNumber = indexPath.row -2;
+            rowNumber = indexPath.row - 1;
         }
         else //is dropdown row
         {
             FRMessagesActionCell* actionCell = [self.tableView dequeueReusableCellWithIdentifier:@"FRMessagesActionCell"];
+            actionCell.backgroundColor = [UIColor clearColor];
             return actionCell;
         }
     }
@@ -89,8 +93,8 @@
     FRMessagesCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"FRMessagesCell"];
     [cell setup];
     
-    cell.profileImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"profile%ld", (long)indexPath.row]];
-    cell.nameLabel.text = [NSString stringWithFormat:@"Person %ld", (long)indexPath.row];
+    cell.profileImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"profile%ld", (long)rowNumber]];
+    cell.nameLabel.text = [NSString stringWithFormat:@"Person %ld", (long)rowNumber];
     cell.messageLabel.text = @"Hello there, how are you doing today? I was just going to tell you about all the amazing things that happened today.";
     
     [cell addDropdownTarget:self selector:@selector(dropdownButtonPressed:)];
@@ -128,8 +132,9 @@
     {
         _dropdownIndex = row+1;
         NSIndexPath* addIndexPath = [NSIndexPath indexPathForRow:_dropdownIndex inSection:0];
-        [self.tableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+        [self.tableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationBottom];
     }
+
 }
 
 
